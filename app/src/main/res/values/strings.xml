@@ -1,3 +1,25 @@
 <resources>
     <string name="app_name">UI tests</string>
+    <string name="termsandconditions"><u>terms and conditions.</u>.
+    </string>
+    <string name="forgot_p"><u>Forgot Password?</u>.
+    </string>
+    <string name="email"><font size="16">email</font></string>
+    <string name="password"><font size="16">password</font></string>
+    <string name="namehint"><font size = "16">firstname middlename lastname</font></string>
+    <string name="confirm_p"><font size = "16">confirm_password</font></string>
+    <string name="mmddyyyy"><font size="16">mm/dd/yyyy</font></string>
+    <string name="email_address"><font size="16">email address</font></string>
+    <string name="your_number"><font size="16">your number</font></string>
+    <string name="applying_for_title">Choose visa</string>
+    <string-array name="applying_for_list">
+        <item>Malaysia</item>
+        <item>United States</item>
+        <item>Indonesia</item>
+        <item>France</item>
+        <item>Italy</item>
+        <item>Singapore</item>
+        <item>New Zealand</item>
+        <item>India</item>
+    </string-array>
 </resources>

@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:layout_gravity="center"
+            android:layout_centerInParent="true">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#1ABC9C"
+                android:textSize="17sp"
+                android:text="Name"
+                android:layout_marginTop="10dp"/>
+
+            <EditText android:id="@+id/signin_name"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="textEmailAddress"
+                android:hint="firstname middlename lastname"
+                android:background="@drawable/edittext_login"
+                android:layout_marginTop="2dp"
+                android:paddingLeft="5dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#1ABC9C"
+                android:textSize="17sp"
+                android:text="Email"
+                android:layout_marginTop="10dp"/>
+
+            <EditText android:id="@+id/signin_email"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="textEmailAddress"
+                android:hint="@string/email_address"
+                android:background="@drawable/edittext_login"
+                android:layout_marginTop="2dp"
+                android:paddingLeft="5dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#1ABC9C"
+                android:textSize="17sp"
+                android:text="Password"
+                android:layout_marginTop="10dp"/>
+
+            <EditText android:id="@+id/signin_password"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="textEmailAddress"
+                android:hint="@string/password"
+                android:background="@drawable/edittext_login"
+                android:layout_marginTop="2dp"
+                android:paddingLeft="5dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#1ABC9C"
+                android:textSize="17sp"
+                android:text="Confirm Password"
+                android:layout_marginTop="10dp"/>
+
+            <EditText android:id="@+id/signin_confirm_password"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="textEmailAddress"
+                android:hint="@string/password"
+                android:background="@drawable/edittext_login"
+                android:layout_marginTop="2dp"
+                android:paddingLeft="5dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#1ABC9C"
+                android:textSize="17sp"
+                android:text="Applying For"
+                android:layout_marginTop="10dp"/>
+
+            <Spinner
+                android:id="@+id/signin_applying_for"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:prompt="@string/applying_for_title"
+                android:entries="@string/applyin_for_list"
+                android:background="@drawable/edittext_login"
+                />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#1ABC9C"
+                android:textSize="17sp"
+                android:text="Birthdate"
+                android:layout_marginTop="10dp"/>
+
+            <EditText android:id="@+id/signin_dob"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="@string/mmddyyyy"
+                android:background="@drawable/edittext_login"
+                android:layout_marginTop="2dp"
+                android:paddingLeft="5dp" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#1ABC9C"
+                android:textSize="17sp"
+                android:text="Mobile Number"
+                android:layout_marginTop="10dp"/>
+
+            <EditText android:id="@+id/signin_mobile_phone"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="@string/your_number"
+                android:background="@drawable/edittext_login"
+                android:layout_marginTop="2dp"
+                android:paddingLeft="5dp" />
+
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/btn_login"
+                android:layout_width="144dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="5dp"
+                android:padding="12dp"
+                android:text="SIGN UP"
+                android:elevation="5dp"
+                android:background="@drawable/button_signin"
+                android:layout_gravity="center"
+                android:textColor="@color/uhub_color"/>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_marginTop="2dp">
+
+
+                <TextView android:id="@+id/byloggngin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffffff"
+                    android:textSize="12sp"
+                    android:layout_weight="0"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="By logging in you agree to our " />
+
+                <TextView android:id="@+id/termsconditions"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#4169E1"
+                    android:layout_weight="0"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:textSize="12sp"
+                    android:text="@string/termsandconditions"/>
+
+
+            </LinearLayout>
+
+            <TextView android:id="@+id/forgot_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:layout_weight="0"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textSize="19sp"
+                android:text="@string/forgot_p"
+                android:layout_marginTop="15dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:paddingRight="15dp"
+                android:paddingLeft="15dp"
+                android:layout_marginTop="15dp">
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="2dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/white"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:textColor="#fff"
+                    android:textSize="25sp"
+                    android:text="OR"
+                    android:gravity="center"
+
+                    />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="2dp"
+                    android:background="@android:color/white"/>
+
+            </LinearLayout>
+
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/btn_createacc"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="24dp"
+                android:padding="12dp"
+                android:text="CREATE UNIHUB ACCOUNT"
+                android:elevation="5dp"
+                android:background="@drawable/button_login" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_marginTop="2dp">
+
+
+                <TextView android:id="@+id/bylogging"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffffff"
+                    android:textSize="12sp"
+                    android:layout_weight="0"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="By logging in you agree to our " />
+
+                <TextView android:id="@+id/tandc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#4169E1"
+                    android:layout_weight="0"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:textSize="12sp"
+                    android:text="@string/termsandconditions"/>
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+
+
+
